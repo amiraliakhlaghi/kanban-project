@@ -1,7 +1,7 @@
 import { Status, useTaskStore } from "@/lib/store";
 import { cn } from "cn";
 
-export default function Task({
+const Task = ({
   id,
   title,
   description,
@@ -11,7 +11,7 @@ export default function Task({
   title: string;
   description?: string | null;
   status: Status;
-}) {
+}) => {
   const { removeTask, dragTask } = useTaskStore();
   return (
     <div
@@ -47,4 +47,4 @@ export default function Task({
       </button>
     </div>
   );
-}
+};
