@@ -22,7 +22,7 @@ const Column = ({ title, status }: { title: string; status: string }) => {
     dragTask(null);
   };
   return (
-    <section className="h-[600px] flex-1">
+    <section className="h-140 flex-1">
       <h2 className="ml-1 font-serif text-2xl font-semibold">{title}</h2>
 
       <div
